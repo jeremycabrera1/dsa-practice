@@ -29,6 +29,5 @@ def merge_two_sorted_lists(list1: Node, list2: Node) -> Node:
             tail.next = list2
             list2 = list2.next
         tail = tail.next
-
-    tail.next = list1 or list2
+    tail.next = list1 or list2    
     return dummy.next
